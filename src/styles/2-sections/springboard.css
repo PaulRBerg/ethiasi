@@ -1,0 +1,128 @@
+/* Container Onboarding */
+.main-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.main-container a:hover {
+    text-decoration: underline;
+}
+
+.main-container input {
+    outline: none;
+    border: none;
+}
+
+.main-container input:focus {
+    border-color: transparent !important;
+}
+
+.main-container input::placeholder {
+    color: #999;
+}
+
+.main-container input:focus::placeholder {
+    color: transparent;
+}
+
+.main-container button {
+    outline: none !important;
+    border: none;
+    background: transparent;
+}
+
+.main-container button:hover {
+    cursor: pointer;
+}
+
+/* Wrap Onboarding */
+.main-container .wrap-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: auto;
+    background: white;
+    border-radius: 8px;
+    overflow: visible;
+    height: auto;
+    padding: 24px 36px;
+}
+
+.main-container .wrap-container .wrap-form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 640px;
+    height: 320px;
+}
+
+.main-container .wrap-container .wrap-form .wrap-title {
+    display: block;
+    width: 100%;
+    color: #222;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.main-container .wrap-container .wrap-subtitle {
+    margin: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #3C3C3D;
+    text-align: center;
+}
+
+.main-container .wrap-container .wrap-text {
+    max-width: 560px;
+    color: #888;
+    font-size: 17px;
+    text-align: center;
+}
+
+.main-container .wrap-container img {
+    margin-left: 36px;
+    width: 375px;
+    height: 294px;
+    object-fit: cover;
+}
+
+/* Mobile */
+/*@media screen and (max-width: 992px) {*/
+    /*.main-container .wrap-container .wrap-image {*/
+        /*display: none;*/
+    /*}*/
+/*}*/
+
+@media screen and (max-width: 768px) {
+    .main-container .wrap-container .wrap-image {
+        display: none;
+    }
+
+    .main-container .wrap-container {
+        padding: 32px 64px;
+        border-radius: 0;
+    }
+    .main-container .alert-onboarding {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .main-container .wrap-container {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        padding: 32px 20px;
+        width: 100%;
+    }
+    .main-container .alert-onboarding {
+        font-size: 10px;
+    }
+}
