@@ -33,10 +33,11 @@
     "url": "git+ssh://git@github.com/PaulRBerg/ethiasi.git"
   },
   "keywords": [
+    "blockchain",
+    "blockchain iasi",
     "ethereum",
-    "ethereum-address",
-    "checksum",
-    "checksum-validator"
+    "ethereum iasi",
+    "smart contracts"
   ],
   "author": "Paul Berg <hello@paulrberg.com> (https://paulrberg.com)",
   "license": "MIT",
