@@ -1,21 +1,8 @@
 /* eslint-disable no-mixed-spaces-and-tabs,indent */
 import React  from "react";
 import { ActionButton } from "components/modules";
-import { FaEthereum } from "react-icons/fa";
-
-import palette from "styles/palette";
-import update from "immutability-helper";
-import utils from "web3-utils";
 
 import "styles/2-sections/springboard.css";
-
-function isEmpty(obj) {
-	for(var key in obj) {
-		if(obj.hasOwnProperty(key))
-			return false;
-	}
-	return true;
-}
 
 class Springboard extends React.Component {
 
